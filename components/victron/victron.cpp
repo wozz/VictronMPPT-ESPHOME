@@ -95,7 +95,6 @@ void VictronComponent::loop() {
 }
 
 void VictronComponent::blocking_loop() {
-  void VictronComponent::loop() {
   const uint32_t now = millis();
   if ((state_ > 0) && (now - last_transmission_ >= 200)) {
     // last transmission too long ago. Reset RX index.
