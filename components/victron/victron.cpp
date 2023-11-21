@@ -87,7 +87,7 @@ void VictronComponent::dump_config() {  // NOLINT(google-readability-function-si
 }
 
 void VictronComponent::loop() {
-  if (async_uart) {
+  if (async_uart_) {
     async_loop();
   } else {
     blocking_loop();
